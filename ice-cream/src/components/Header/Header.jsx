@@ -1,11 +1,11 @@
-import React from "react"
-import classes from "./Header.module"
-import logo from '../../assets/images/logo'
-import reactLogo from '../../assets/images/react'
+import React from 'react';
+import classes from './Header.module.css';
+import logo from '../../assets/images/logo.svg';
+import reactLogo from '../../assets/images/react.svg';
 
 const Header = () => {
-   return (
-    <header>
+    return (
+        <header>
             <div className="container">
                 <div>
                     <img className={classes.logo} src={logo} alt="Logo" />
@@ -16,7 +16,7 @@ const Header = () => {
                 </div>
             </div>
         </header>
-  )
-}
+    );
+};
 
-export default Header
+export default Header;

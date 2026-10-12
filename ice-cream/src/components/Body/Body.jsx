@@ -1,8 +1,11 @@
-import React from 'react'
-import classes from './Body.module'
+import React from 'react';
+import classes from './Body.module.css';
+import IceCreamBuilder from '../../container/IceCreamBuilder/IceCreamBuilder';
 
-export const Body = () => {
-  return (
-    <div className={classes.mainBody}>Body</div>
-  )
-}
+const Body = () => {
+    return <div className={classes.mainBody}>
+        <IceCreamBuilder />
+    </div>;
+};
+
+export default Body;
