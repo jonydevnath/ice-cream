@@ -2,7 +2,6 @@ import React from 'react'
 import classes from './Builder.module.css'
 import { Items } from './Items/Items'
 import { TotalPrice } from './TotalPrice/TotalPrice'
-import { Model } from './Modal/Modal'
 
 const Builder = ({ items, price, add, remove, scoops }) => {
   return (
@@ -21,7 +20,6 @@ const Builder = ({ items, price, add, remove, scoops }) => {
         </button>
 
       </div>
-      <Model> Hello Model</Model>
     </div>
   );
 };
