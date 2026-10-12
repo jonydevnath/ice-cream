@@ -59,7 +59,7 @@ export default class IceCreamBuilder extends Component {
         return (
             <div className={["container ", classes.container].join(' ')}>
                 <IceCream scoops={scoops} />
-                <Builder items={items} price={totalPrice} add={this.addScoop} remove={this.removeScoop} />
+                <Builder items={items} price={totalPrice} add={this.addScoop} remove={this.removeScoop} scoops={scoops} />
             </div>
         )
     }
