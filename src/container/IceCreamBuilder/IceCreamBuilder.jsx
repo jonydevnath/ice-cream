@@ -16,6 +16,17 @@ export default class IceCreamBuilder extends Component {
         totalPrice: 0,
     };
 
+    // Firebase Database intregration - [keep the items: {} empty while firebase is used]
+    // componentDidMount() {
+    //     fetch('https://ice-cream.firebaseio.com/items.json')
+    //         .then((response) => response.json())
+    //         .then((responseData) => {
+    //             this.setState({
+    //                 items: responseData,
+    //             });
+    //         });
+    // }
+
     addScoop = (scoop) => {
         const { scoops, items } = this.state;
         const workingScoops = [...scoops];
@@ -32,7 +43,7 @@ export default class IceCreamBuilder extends Component {
     removeScoop = (scoop) => {
         const { scoops, items } = this.state;
         const workingScoops = [...scoops];
-        const scoopsIndex = workingScoops.findIndex((sc)=> sc === scoop)
+        const scoopsIndex = workingScoops.findIndex((sc) => sc === scoop)
         workingScoops.splice(scoopsIndex, 1);
 
         this.setState((prevState) => {
